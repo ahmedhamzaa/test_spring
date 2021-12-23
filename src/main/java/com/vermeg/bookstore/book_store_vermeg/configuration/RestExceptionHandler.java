@@ -1,7 +1,8 @@
 package com.vermeg.bookstore.book_store_vermeg.configuration;
 
-import com.sip.vermeg.book_store_vermeg.model.ErrorResponse;
-import com.sip.vermeg.book_store_vermeg.model.FieldError;
+
+import com.vermeg.bookstore.book_store_vermeg.model.ErrorResponse;
+import com.vermeg.bookstore.book_store_vermeg.model.FieldError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
