@@ -1,4 +1,4 @@
-package com.vermeg.bookstore.book_store_vermeg.config;
+package com.vermeg.bookstore.book_store_vermeg.configuration;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.SerializationFeature;

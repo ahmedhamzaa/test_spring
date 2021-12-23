@@ -1,9 +1,7 @@
-package com.vermeg.bookstore.book_store_vermeg.config;
+package com.vermeg.bookstore.book_store_vermeg.configuration;
 
-import com.vermeg.bookstore.book_store_vermeg.model.ErrorResponse;
-import com.vermeg.bookstore.book_store_vermeg.model.FieldError;
-import java.util.List;
-import java.util.stream.Collectors;
+import com.sip.vermeg.book_store_vermeg.model.ErrorResponse;
+import com.sip.vermeg.book_store_vermeg.model.FieldError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -12,6 +10,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 @RestControllerAdvice(annotations = RestController.class)
