@@ -1,4 +1,4 @@
-package com.vermeg.bookstore.book_store_vermeg.configuration;
+package com.vermeg.bookstore.book_store_vermeg.config;
 
 
 import com.vermeg.bookstore.book_store_vermeg.model.ErrorResponse;
