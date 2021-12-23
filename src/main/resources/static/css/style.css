@@ -1,0 +1,82 @@
+.head{
+    border-radius: 20px;
+    box-shadow: 0px 12px 30px #7c7c7c40;
+    background-color: #EFECFF;
+    font-family: "Ubuntu" , sans-serif;
+    padding-top: 12px;
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+body{
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    position: relative;
+    margin-left: 12%;
+    margin-right: 3%;
+    margin-top: 10px;
+    text-align: center;
+}
+.navbar{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+#beforeacc{
+    background-color: #6D5DD3;
+    width: 200px;
+    height: 140px;
+
+}
+#acc {
+    background-color: #6D5DD3;
+    width: 200px;
+    height: 56px;
+    font-family: Ubuntu;
+}
+#hist{
+    background-color: #6D5DD3;
+    width: 200px;
+    height: 65px;
+    font-family: Ubuntu;
+}
+#pan{
+    background-color: #6D5DD3;
+    width: 200px;
+    height: 65px;
+    font-family: Ubuntu;
+}
+#afterpan{
+
+    background-color: #6D5DD3;
+    width: 200px;
+    height: calc(100vh - (140px + 56px + 65px + 65px + 56px)); /* rest of screen size */
+    border-bottom-right-radius: 17px;
+
+}
+h1{
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    color: #FDFDFD;
+}
+.bi::before{
+    font-size: 22px;
+    margin: 20px 11px 20px 19px;
+}
+.navbar-brand{
+    color:#6D5DD3!important ;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.secondNavbar{
+    float: left;
+}
+.blocks{
+    width: 100%; overflow: hidden;
+}

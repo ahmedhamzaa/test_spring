@@ -1,0 +1,83 @@
+<!-- Content -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<div th:fragment="assets(${orders})" th:remove="tag">
+
+
+<div class="content" >
+    <table class="table table-hover table-borderless">
+        <thead >
+        <tr>
+            <th ><div class="head">№</div></th>
+            <th ><div class="head">Date Commande</div></th>
+            <th ><div class="head">Date de Livraison</div></th>
+            <th ><div class="head">Prix Total</div></th>
+            <th ><div class="head">Status</div></th>
+            <th ><div class="head">Details</div></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="order : ${orders}">
+            <td th:text="${order.id}">1</td>
+            <td th:text="${order.createdDate}">22/12/2021</td>
+            <td th:text="${order.shippedDate}">22/12/2021</td>
+            <td th:text="${order.totalPrice}">100$</td>
+            <td th:text="${order.status}">Shipped</td>
+            <td><a href="#" class="link-success" data-toggle="modal" data-target="#exampleModal">Show</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header float-right">
+                    <h5>order details</h5>
+                    <div class="text-right"> <i data-dismiss="modal" aria-label="Close" class="fa fa-close"></i> </div>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">Book Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Quntity</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Samso</td>
+                                <td>2</td>
+                                <td>50 DT</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Tinor</td>
+                                <td>1</td>
+                                <td>100 DT</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mythor</td>
+                                <td>3</td>
+                                <td>70 DT</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
