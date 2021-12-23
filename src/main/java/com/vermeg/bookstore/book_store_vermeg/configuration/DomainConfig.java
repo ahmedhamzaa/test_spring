@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EntityScan("com.sip.vermeg.book_store_vermeg.domain")
-
+@EnableJpaRepositories("com.vermeg.bookstore.book_store_vermeg.repos")
 @EnableTransactionManagement
 public class DomainConfig {
 }
