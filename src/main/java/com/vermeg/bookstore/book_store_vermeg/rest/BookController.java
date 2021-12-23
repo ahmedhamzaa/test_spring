@@ -104,13 +104,13 @@ public class BookController {
 
     // code mouhib
 
-    @GetMapping("add")
+    @GetMapping("/add")
     public String showAddArticleForm(BookDTO Book, Model model) {
         model.addAttribute("book", new BookDTO());
         return "book/addBook";
     }
 
-    @PostMapping("add")
+    @PostMapping("/add")
     public String createBook(@Valid final BookDTO bookDTO, @RequestParam("files") MultipartFile[] files) {
         MultipartFile file = files[0];
         bookDTO.setImage(file.getOriginalFilename());
