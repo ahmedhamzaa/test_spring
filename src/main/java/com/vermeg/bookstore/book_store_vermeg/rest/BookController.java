@@ -130,7 +130,7 @@ public class BookController {
       //  bookService.update(bookDTO.getId(), bookDTO);
         bookService.create(bookDTO);
 
-        return "redirect:list";
+        return "redirect:../list";
     }
 
 
