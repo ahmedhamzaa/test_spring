@@ -58,7 +58,7 @@ public class BookController {
     }
     */
 
-    @GetMapping("/list")
+    @GetMapping("list")
     public String getAllBooks(Model model) {
 
         List<BookDTO> books = (List<BookDTO>) bookService.findAll();
@@ -69,7 +69,7 @@ public class BookController {
         return "book/listBook";
     }
 
-   @GetMapping("/list/{id}")
+   @GetMapping("list/{id}")
    public String getBook(@PathVariable final Integer id ,Model model) {
 
      BookDTO book = (BookDTO) bookService.get(id);
@@ -77,7 +77,7 @@ public class BookController {
      return "book/updateBook";
    }
 
-    @GetMapping("/delete/{id}")
+    @GetMapping("delete/{id}")
     public String deleteBook(@PathVariable final Integer id) {
         BookDTO book = (BookDTO) bookService.get(id);
 
@@ -104,13 +104,13 @@ public class BookController {
 
     // code mouhib
 
-    @GetMapping("/add")
+    @GetMapping("add")
     public String showAddArticleForm(BookDTO Book, Model model) {
         model.addAttribute("book", new BookDTO());
         return "book/addBook";
     }
 
-    @PostMapping("/add")
+    @PostMapping("add")
     public String createBook(@Valid final BookDTO bookDTO, @RequestParam("files") MultipartFile[] files) {
         MultipartFile file = files[0];
         bookDTO.setImage(file.getOriginalFilename());
